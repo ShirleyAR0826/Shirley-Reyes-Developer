@@ -66,7 +66,6 @@ function App() {
     <div className="container skills">
       <img className="skills-icon" src="/js.png" />
       <img className="skills-icon" src="/HTML5.png" />
-      <img className="skills-icon" src="/css3.png" />
       <img className="skills-icon" src="/react.png" />
       <img className="skills-icon" src="/redux.png" />
       <img className="skills-icon" src="/nodejs.png" />
