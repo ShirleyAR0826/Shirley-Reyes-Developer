@@ -5,6 +5,7 @@ import Jumbotron from 'react-bootstrap/Jumbotron';
 import Tilt from 'react-tilt';
 import { SocialIcon } from 'react-social-icons';
 
+
 function App() {
   return ( 
   <div className="app">
@@ -61,10 +62,30 @@ function App() {
   </div>
   </section>
 
+  <section id="languages">
+    <div className="container skills">
+      <img className="skills-icon" src="/js.png" />
+      <img className="skills-icon" src="/HTML5.png" />
+      <img className="skills-icon" src="/CSS3.png" />
+      <img className="skills-icon" src="/react.png" />
+      <img className="skills-icon" src="/redux.png" />
+      <img className="skills-icon" src="/nodejs.png" />
+      <img className="skills-icon" src="/mongodb.png" />
+      <img className="skills-icon" src="/postgresql.png" />
+      <img className="skills-icon" src="/firebase.png" />
+      <img className="skills-icon" src="/google-analytics.png" />
+      <img className="skills-icon" src="/heroku.png" />
+      <img className="skills-icon" src="/amazon-web-services.png" />
+      <img className="skills-icon" src="/python.png" />
+      <img className="skills-icon" src="/c-programming.png" />
+      <img className="skills-icon" src="/vscode.png" />
+    </div>
+  </section>
+
   <section id="projects">
   <div className="container">
     <div className="project-wrapper">
-      <h2 className="section-title dark-blue-text">
+      <h2 className="section-title">
         Projects
       </h2>
       
