@@ -137,14 +137,6 @@ a:hover {
     font-size: 1.3rem;
 }
 
-.footer a {
-      color: darken(white, 50%);
-      font-size: 1.3rem;
-      transition: all 0.4s;
-      display: inline-block;
-      background-color: #333333;
-}
-
 .footer a:hover, :active {
         color: #02aab0;
         -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
@@ -160,25 +152,19 @@ a:hover {
 }
 
 .social-links {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.social-links  a {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
-    color: #fff;
-    font-size: 3rem;
-    width: 5rem;
-    height: 5rem;
-    margin: 1.6rem 1.6rem;
     transition: all 0.2s ease-in;
 }
 
 .social-links:hover {
   transform: translateY(-2px);
+}
+
+.Icon:not(:last-child) {
+ margin-right: 15px;
 }
 
 .back-to-top i {
@@ -210,14 +196,12 @@ section {
   padding-bottom: 10%;
 }
 
-
-
-    .about-wrapper__image {
-      display: flex;
-      height: 100%;
-      align-items: center;
-      justify-content: center;
-    }
+.about-wrapper__image {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
 
 .about-wrapper__info {
   display: flex;
@@ -250,19 +234,23 @@ section {
   color: #fff;
 }
 
-  #contact .contact-wrapper {
-    margin-top: 3.2rem;
-    padding: 0 2rem;
-    backface-visibility: hidden;
-  }
+#contact .contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3.2rem;
+  padding: 0 2rem;
+  backface-visibility: hidden;
+}
 
-    #contact .contact-wrapper__text {
-      margin-bottom: 2.5rem;
-    }
+#contact .contact-wrapper__text {
+  margin-bottom: 2.5rem;
+}
 
-    #contact .contact-wrapper__text, a {
-      font-size: 2rem;
-    }
+#contact .contact-wrapper__text, a {
+  font-size: 2rem;
+}
 
 #hero {
   min-height: 100vh;
@@ -271,6 +259,9 @@ section {
   align-items: center;
   border-bottom: 0px;
   background: #fff;
+  /*background: url("/src/assets/[your-image].png");
+  background-position: center;
+  background-size: cover;*/
   font-weight: 400;
   color: #272341;
   padding: 0rem 5.6rem;
@@ -281,10 +272,6 @@ section {
   right: 0;
   z-index: -1;
 }
-
-  /* background: url("/src/assets/[your-image].png");
-  background-position: center;
-  background-size: cover; */
 
 #hero .hero-title {
   font-size: 4.6rem;
@@ -345,3 +332,4 @@ section {
           0.5s box-shadow,
           0.5s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
 }
+

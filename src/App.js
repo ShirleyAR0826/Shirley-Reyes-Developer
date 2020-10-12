@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Jumbotron from 'react-bootstrap/Jumbotron';
+import Tilt from 'react-tilt';
+import { SocialIcon } from 'react-social-icons';
 
 function App() {
   return ( 
@@ -12,7 +14,7 @@ function App() {
           <h1 className="hero-title">
             Hi, my name is <span className="text-color-main">Shirley Reyes</span>
               <br />
-            I'm the Developer you need.
+            I'm a Fullstack Developer.
           </h1>
           <p className="hero-cta">
             <a className="cta-btn cta-btn--hero" href="#about">Know more</a>
@@ -27,7 +29,7 @@ function App() {
     </h2>
     <div className="row about-wrapper">
       <div className="col-md-6 col-sm-12">
-        <div className="about-wrapper__image">
+        <Tilt className="about-wrapper__image" options={{ max : 30 }}>
           <img
             className="img-fluid rounded shadow-lg"
             height="auto"
@@ -35,7 +37,7 @@ function App() {
             src="/shirley.jpg"
             alt="Profile Image"
           />
-        </div>
+        </Tilt>
       </div>
       <div className="col-md-6 col-sm-12">
         <div className="about-wrapper__info">
@@ -86,9 +88,9 @@ function App() {
         <div className="col-lg-8 col-sm-12">
           <div className="project-wrapper__image">
             <a href="https://www.sunnysideph.com/" target="_blank">
-              <div data-tilt className="thumbnail rounded">
+              <Tilt className="thumbnail rounded" options={{ max : 30 }} >
                 <img className="img-fluid" src="/sunnysideph.jpg" />
-              </div>
+              </Tilt>
             </a>
           </div>
         </div>
@@ -114,9 +116,9 @@ function App() {
         <div className="col-lg-8 col-sm-12">
           <div className="project-wrapper__image">
             <a href="https://smart-brain-sar.herokuapp.com/" target="_blank">
-              <div data-tilt className="thumbnail rounded">
+              <Tilt className="thumbnail rounded" options={{ max : 30 }} >
                 <img className="img-fluid" src="/SmartBrain_home.jpg" />
-              </div>
+              </Tilt>
             </a>
           </div>
         </div>
@@ -141,9 +143,9 @@ function App() {
         <div className="col-lg-8 col-sm-12">
           <div className="project-wrapper__image">
             <a href="https://covid19-dashboard-72289.web.app/" target="_blank">
-              <div data-tilt className="thumbnail rounded">
+              <Tilt className="thumbnail rounded" options={{ max : 30 }} >
                 <img className="img-fluid" src="/COVID19 -Dashboard.jpg" />
-              </div>
+              </Tilt>
             </a>
           </div>
         </div>
@@ -169,9 +171,9 @@ function App() {
         <div className="col-lg-8 col-sm-12">
           <div className="project-wrapper__image">
             <a href="https://shirleyar0826.github.io/RoboFriends" target="_blank">
-              <div data-tilt className="thumbnail rounded">
+              <Tilt className="thumbnail rounded" options={{ max : 30 }} >
                 <img className="img-fluid" src="/Robofriends.jpg" />
-              </div>
+              </Tilt>
             </a>
           </div>
         </div>
@@ -199,27 +201,16 @@ function App() {
   </div>
 </section>
 
-<footer className="footer navbar-static-bottom">
-  <div className="container">
-    <a href="#top" className="back-to-top">
-      <i className="fa fa-angle-up fa-2x" aria-hidden="true"></i>
-    </a>
-    <div className="social-links">
-      <a href="https://web.facebook.com/shirley.apellido" target="_blank">
-        <i className="fa fa-facebook-f fa-inverse"></i>
-      </a>
-      <a href="https://stackoverflow.com/users/13151983/shirleyar" target="_blank">
-        <i className="fa fa-stack-overflow fa-inverse"></i>
-      </a>
-      <a href="https://github.com/ShirleyAR0826" target="_blank">
-        <i className="fa fa-github fa-inverse"></i>
-      </a>
-    </div>
-    <hr />
-    <p className="footer__text">
-      © 2020 - <a href="https://github.com/ShirleyAR0826" target="_blank">Shirley Reyes</a>
-    </p>
+<footer className="footer">
+  <div className="container social-links">
+    <SocialIcon url="https://github.com/ShirleyAR0826" className="Icon"/>
+    <SocialIcon url="https://web.facebook.com/shirley.apellido" className="Icon" />
+    <SocialIcon url="https://stackoverflow.com/users/13151983/shirleyar" className="Icon" />
   </div>
+  <hr />
+  <p className="footer__text">
+    © 2020 - Shirley Reyes
+  </p>
 </footer>
   </div>
   );
