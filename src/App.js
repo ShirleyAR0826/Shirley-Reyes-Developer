@@ -17,7 +17,7 @@ function App() {
         <Header/>
         <div className="container">
           <h1 className="hero-title">
-            Hi, my name is <span className="text-color-main">Shirley Reyes</span>
+            Hi, my name is <span className="text-color-main">Shirley Reyes.</span>
               <br />
             I'm a Fullstack Developer.
           </h1>
