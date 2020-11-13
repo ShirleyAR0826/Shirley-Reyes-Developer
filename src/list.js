@@ -14,6 +14,13 @@ export const projectList = [
         screenShot: "/amazonclone.jpg"
     },
     {
+        title: "Netflix Clone",
+        description: "This is a Netflix Clone which I created using React. It was created using a movie database API. It has a responsive UI design. It has the ability to play movie trailers as well.",
+        liveLink: "https://netflix-clone-57bfd.web.app/",
+        sourceCode: "https://github.com/ShirleyAR0826/Netflix-Clone",
+        screenShot: "/netflixclone.jpg"
+    },
+    {
         title: "Smart-Brain Web App",
         description: "Here's a face detection web application that I created using a machine learning API. It is built with React.js in the Front-End. It has a Node.js server and PostgreSQL database. It has user Registration and Signin functionalities.",
         liveLink: "https://smart-brain-sar.herokuapp.com/",
