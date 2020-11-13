@@ -38,8 +38,6 @@ function App() {
             <Tilt className="about-wrapper__image" options={{ max : 10 }}>
               <img
                 className="img-fluid rounded shadow-lg"
-                height="auto"
-                width="300px"
                 src="/shirley.jpg"
                 alt="Shirley"
               />
