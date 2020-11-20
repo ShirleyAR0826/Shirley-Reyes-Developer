@@ -9,9 +9,13 @@
 ul {
   list-style: none;
   display: flex;
-  justify-content: space-between;
-  width: 40%;
+  align-items: center;
   margin-bottom: 0px;
+  padding: 0;
+}
+
+li {
+  padding: 0px 20px;
 }
 
 li > a {

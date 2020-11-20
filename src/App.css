@@ -1,3 +1,8 @@
+.app {
+  display: flex;
+  flex-direction: column;
+}
+
 .mb-8 {
   margin-bottom: 8rem !important;
 }
@@ -182,9 +187,16 @@ section {
   color: #fff;
   height: 100%;
   border-top: 0px;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-  padding-bottom: 10%;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  padding-bottom: 200px;
+}
+
+#about > .container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-bottom: 80px;
 }
 
 .about-wrapper__image {
@@ -194,8 +206,8 @@ section {
 }
 
 .about-wrapper__image > img {
-  height: 500px;
   object-fit: contain;
+  height: 450px;
 }
 
 .about-wrapper__info {
@@ -304,7 +316,7 @@ a {
 #projects {
   background-color: #fff;
   color: #272341;
-  padding-top: 3rem;
+  padding-top: 80px;
 }
 
 #projects .project-wrapper {
@@ -312,11 +324,12 @@ a {
 }
 
 #projects .project-wrapper .row {
-  margin-bottom: 8rem;
+  margin-bottom: 120px;
 }
 
 #projects .project-wrapper__text {
   text-align: left;
+  margin-bottom: 40px;
 }
 
 #projects .project-wrapper h2 {
@@ -334,8 +347,7 @@ a {
 }
 
 #projects .project-wrapper__image {
-  width: 90%;
-  margin: 0 auto;
+  object-fit: contain;
 }
 
 #projects .project-wrapper__image .thumbnail {
