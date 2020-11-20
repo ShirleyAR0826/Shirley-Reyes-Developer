@@ -104,4 +104,16 @@ export const skillsList = [
         technology: "VScode",
         skillImage: "/vscode.png"
     },
+    {
+        technology: "ReactNative",
+        skillImage: "/react-native.png"
+    },
+    {
+        technology: "Expo",
+        skillImage: "/expo.png"
+    },
+    {
+        technology: "AndroidStudio",
+        skillImage: "/androidstudio.png"
+    },
 ]

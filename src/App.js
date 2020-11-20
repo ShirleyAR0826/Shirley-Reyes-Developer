@@ -7,13 +7,14 @@ import { SocialIcon } from 'react-social-icons';
 import Project from './Project';
 import {projectList, skillsList} from './list';
 import Header from './Header';
+import cover3 from './cover3.jpg';
 
 
 function App() {
   return ( 
   <div className="app">
     <div id="top">
-      <Jumbotron id="hero">
+      <Jumbotron id="hero" style={{backgroundImage: `url(${cover3})`}}>
         <Header/>
         <div className="container">
           <h1 className="hero-title">
