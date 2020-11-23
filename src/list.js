@@ -41,6 +41,13 @@ export const projectList = [
         sourceCode: "https://github.com/ShirleyAR0826/RoboFriends",
         screenShot: "/Robofriends.jpg"
     },
+        {
+        title: "Travel App",
+        description: "Here's a Travel App I created with React Native. It has responsive design. It is published in Expo.",
+        liveLink: "https://expo.io/@shirleyar/projects/TravelApp",
+        sourceCode: "https://github.com/ShirleyAR0826/TravelApp",
+        screenShot: "/TravelApp.jpg"
+    },
 ]
 
 export const skillsList = [
