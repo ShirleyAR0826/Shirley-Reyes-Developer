@@ -13,12 +13,12 @@ import cover3 from './cover3.jpg';
 function App() {
   return ( 
   <div className="app">
-    <div id="top">
+    <div id="top" className="top">
       <Jumbotron id="hero" style={{backgroundImage: `url(${cover3})`}}>
         <Header/>
         <div className="container">
           <h1 className="hero-title">
-            Hi, my name is 
+            Hi, my name is&#160;
             <span className="text-color-main"> Shirley Reyes.</span>
               <br />
             I'm a Fullstack Developer.
@@ -57,7 +57,7 @@ function App() {
                 My Top 5 Gallup Strenghts: Maximizer, Ideation, Learner, Achiever, Intellection.
               </p>
               <span className="d-flex mt-3">
-                <a target="_blank" className="cta-btn cta-btn--resume" href="https://drive.google.com/file/d/1deWYMCeOmntV30jVsMHEYAweEjuG2Vb8/view?usp=sharing">
+                <a target="_blank" rel="noopener noreferrer" className="cta-btn cta-btn--resume" href="https://drive.google.com/file/d/1deWYMCeOmntV30jVsMHEYAweEjuG2Vb8/view?usp=sharing">
                   View Resume
                 </a>
               </span>
@@ -111,6 +111,7 @@ function App() {
           </p>
           <a
             target="_blank"
+            rel="noopener noreferrer"
             className="cta-btn cta-btn--resume"
             href="mailto:shirley.apellido@gmail.com"
             >Inquire here</a>

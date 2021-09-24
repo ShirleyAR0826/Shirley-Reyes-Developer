@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 50px;
+  height: 2rem;
 }
 
 ul {
@@ -15,11 +15,11 @@ ul {
 }
 
 li {
-  padding: 0px 20px;
+  padding: 0 0.6rem;
 }
 
 li > a {
-  font-size: 15px;
+  font-size: 0.6rem;
   font-weight: 800;
   color: #ffffff;
   text-decoration: none;

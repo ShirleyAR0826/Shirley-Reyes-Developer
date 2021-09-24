@@ -8,21 +8,21 @@ function Project({title, description, liveLink, sourceCode, screenShot}) {
           <div className="project-wrapper__text">
             <h3 className="project-wrapper__text-title">{title}</h3>
             <div>
-              <p className="mb-5">{description}</p>
+              <p className="mb-3">{description}</p>
             </div>
-            <a target="_blank" className="cta-btn cta-btn--hero" href={liveLink}>
+            <a target="_blank" rel="noopener noreferrer" className="cta-btn cta-btn--hero cta-project" href={liveLink}>
               See Live
             </a>
-            <a target="_blank" className="cta-btn text-color-main" href={sourceCode}>
+            <a target="_blank" rel="noopener noreferrer" className="cta-btn text-color-main cta-project" href={sourceCode}>
               Source Code
             </a>
           </div>
         </div>
         <div className="col-lg-8 col-sm-12">
           <div className="project-wrapper__image">
-            <a href={liveLink} target="_blank">
+            <a href={liveLink} target="_blank" rel="noopener noreferrer">
               <Tilt className="thumbnail rounded" options={{ max : 5 }} >
-                <img className="img-fluid" src={screenShot} />
+                <img className="img-fluid" alt={title} src={screenShot} />
               </Tilt>
             </a>
           </div>
