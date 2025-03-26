@@ -20,7 +20,7 @@ export default function HeaderMobile() {
     <Box sx={{ width: 250 }} role="presentation" onClick={toggleDrawer(false)}>
       <ul className="header-mobile-list">
         <li><a href="#about">ABOUT</a></li>
-        <li><a href="#strenghts">STRENGHTS</a></li>
+        <li><a href="#strengths">STRENGTHS</a></li>
         <li><a href="#skills">SKILLS</a></li>
         <li><a href="#projects">PROJECTS</a></li>
         <li><a href="#contact">CONTACT</a></li>

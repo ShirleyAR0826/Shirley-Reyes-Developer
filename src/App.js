@@ -5,7 +5,7 @@ import Jumbotron from 'react-bootstrap/Jumbotron';
 import Tilt from 'react-tilt';
 import { SocialIcon } from 'react-social-icons';
 import Project from './Project';
-import { projectList, skillsList, strenghtsList } from './list';
+import { projectList, skillsList, strengthsList } from './list';
 import Header from './Header';
 import cover3 from './cover3.jpg';
 import HeaderMobile from './HeaderMobile';
@@ -76,13 +76,13 @@ function App() {
       </div>
     </section>
 
-    <section id="strenghts">
+    <section id="strengths">
       <div className="container">
         <h2 className="section-title">
           Gallup CliftonStrengths©
         </h2>
         <div className="skills">
-          {strenghtsList.map(({strength, imageUrl}) => (
+          {strengthsList.map(({strength, imageUrl}) => (
             <div className="skill-item">
               <h6 className="skill-title">{strength}</h6>
               <img className="strengths-icon" src={imageUrl} alt={strength}/>

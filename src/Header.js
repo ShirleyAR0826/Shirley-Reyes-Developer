@@ -6,7 +6,7 @@ function Header() {
         <div className="header">
             <ul>
                 <li><a href="#about">ABOUT</a></li>
-                <li><a href="#strenghts">STRENGHTS</a></li>
+                <li><a href="#strengths">STRENGTHS</a></li>
                 <li><a href="#skills">SKILLS</a></li>
                 <li><a href="#projects">PROJECTS</a></li>
                 <li><a href="#contact">CONTACT</a></li>

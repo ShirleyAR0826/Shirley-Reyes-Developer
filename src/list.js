@@ -178,7 +178,7 @@ export const skillsList = [
     },
 ]
 
-export const strenghtsList = [
+export const strengthsList = [
     {
         strength: "Maximizer",
         imageUrl: "/maximizer.png"
