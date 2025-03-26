@@ -1,0 +1,40 @@
+#header-mobile {
+  display: none;
+  position: absolute;
+  flex-direction: row;
+  width: 100%;
+  height: 2rem;
+  padding-top: 1rem;
+}
+
+.header-mobile-icon {
+  color: #ffffff;
+}
+
+.header-mobile-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-mobile-list > li {
+  padding: 0.5rem;
+  width: 100%;
+  text-align: center;
+}
+
+.header-mobile-list > li > a {
+  font-size: 0.6rem;
+  font-weight: 800;
+  color: #000000;
+  text-decoration: none;
+}
+
+.header-mobile-list > li > a:hover {
+  color: #287aa7;
+}
+
+@media (max-width: 400px) {
+  #header-mobile{
+    display: flex; /* Or whatever style you need */
+  }
+}

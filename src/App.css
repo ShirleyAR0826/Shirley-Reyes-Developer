@@ -82,6 +82,7 @@ a:hover {
   border: 2px solid transparent;
   border-image: linear-gradient(135deg, #006da7 0%, #006da7 100%);
   border-image-slice: 1;
+  text-align: center;
 }
 
 .cta-btn--hero::after {
@@ -133,6 +134,8 @@ a:hover {
 .footer__text {
   color: darken(white, 50%);
   font-size: 0.8rem;
+  text-align: center;
+  margin-top: 1rem;
 }
 
 .footer a:hover,
@@ -189,7 +192,7 @@ section {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   padding-bottom: 200px;
-  padding-top: 2.5rem;
+  padding-top: 2rem;
 }
 
 #about > .container {
@@ -213,12 +216,16 @@ section {
 .about-wrapper__info {
   display: flex;
   height: 100%;
-  justify-content: space-evenly;
+  justify-content: start;
   flex-direction: column;
 }
 
 .about-wrapper__info > p {
   font-size: 0.8rem;
+}
+
+.about-wrapper__info > span {
+  padding: 0.5rem;
 }
 
 .about-wrapper__info-text {
@@ -235,7 +242,7 @@ section {
   background-image: linear-gradient(135deg, #006da7 0%, #0051a7 100%);
   -webkit-clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
-  padding: 15rem 0 10rem 0;
+  padding: 8rem 0 10rem 0;
   margin-top: -10rem;
   margin-bottom: -1px;
   color: #fff;
@@ -268,7 +275,6 @@ a {
   align-items: center;
   justify-content: space-between;
   border-bottom: 0px;
-  background: url("/cover3.jpg");
   background-position: center;
   background-size: cover;
   font-weight: 400;
@@ -383,6 +389,18 @@ a {
   justify-content: center;
 }
 
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.skill-title {
+  text-transform: capitalize;
+}
+
 .skills-icon {
   width: 120px;
   height: 120px;
@@ -392,5 +410,53 @@ a {
 }
 
 .skills-icon:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
+}
+
+.strengths-icon {
+  width: 240px;
+  height: 240px;
+  margin: 20px;
+  padding: 2px;
+  transition: transform 0.2s;
+}
+
+.strengths-icon:hover {
+  transform: scale(1.1);
+}
+
+.back-to-top-container {
+  margin-top: 5rem;
+}
+
+.back-to-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.back-to-top > img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #0051a7;
+  color: #fff;
+  padding: 10px 5px;
+  transition: all 0.2s ease-in;
+}
+
+.back-to-top > img:hover {
+  transform: translateY(-2px);
+}
+
+.back-to-top > span {
+  font-size: 0.8rem;
+  margin-top: 0.8rem;
+}
+
+@media (max-width: 400px) {
+  #hero > .container {
+    height: 100%;
+  }
 }

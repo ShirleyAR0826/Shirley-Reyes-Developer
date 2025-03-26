@@ -5,9 +5,10 @@ import Jumbotron from 'react-bootstrap/Jumbotron';
 import Tilt from 'react-tilt';
 import { SocialIcon } from 'react-social-icons';
 import Project from './Project';
-import {projectList, skillsList} from './list';
+import { projectList, skillsList, strenghtsList } from './list';
 import Header from './Header';
 import cover3 from './cover3.jpg';
+import HeaderMobile from './HeaderMobile';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
     <div id="top" className="top">
       <Jumbotron id="hero" style={{backgroundImage: `url(${cover3})`}}>
         <Header/>
+        <HeaderMobile/>
         <div className="container">
           <h1 className="hero-title">
             Hi, my name is&#160;
@@ -48,21 +50,44 @@ function App() {
           <div className="col-md-6 col-sm-12">
             <div className="about-wrapper__info">
               <p className="about-wrapper__info-text">
-                I am a Fullstack Web Developer. I have experience in creating Web Applications from Front-End, Server and Database. I am well-versed in the following technologies: HTML5, CSS3, CSS Grid, Boostrap4, JavaScript, Git/Github, NPM/NPM Scripts, React.js, Redux, Node.js, HTTP, JSON, AJAX, Express.js, RESTful API, SQL, PostgreSQL, MongoDB. 
+              I am a Full-Stack Web Developer with a 
+              proven track record of building end-to end 
+              web applications—from intuitive
+              front-end interfaces to robust serverside
+              logic and database
+              management.
               </p>
               <p className="about-wrapper__info-text">
-                I am creative and passionate in what I do. I am driven by the desire to use my skills to solve real world problems. 
-              </p>
-              <p className="about-wrapper__info-text">
-                My Top 5 Gallup Strenghts: Maximizer, Ideation, Learner, Achiever, Intellection.
+              Passionate about solving real-world
+              problems through clean, scalable
+              code and user-centered design, I bring
+              both technical expertise and a
+              problem-solving mindset to every
+              project.
               </p>
               <span className="d-flex mt-3">
-                <a target="_blank" rel="noopener noreferrer" className="cta-btn cta-btn--resume" href="https://drive.google.com/file/d/1deWYMCeOmntV30jVsMHEYAweEjuG2Vb8/view?usp=sharing">
+                <a target="_blank" rel="noopener noreferrer" className="cta-btn cta-btn--resume" href="https://drive.google.com/file/d/1LibA26JxPQ7pDrQxVRewesmleX2SJZE_/view?usp=drive_link">
                   View Resume
                 </a>
               </span>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="strenghts">
+      <div className="container">
+        <h2 className="section-title">
+          Gallup CliftonStrengths©
+        </h2>
+        <div className="skills">
+          {strenghtsList.map(({strength, imageUrl}) => (
+            <div className="skill-item">
+              <h6 className="skill-title">{strength}</h6>
+              <img className="strengths-icon" src={imageUrl} alt={strength}/>
+            </div>
+          ))}
         </div>
       </div>
     </section>
@@ -74,7 +99,10 @@ function App() {
         </h2>
         <div className="skills">
           {skillsList.map(skill=>(
-            <img className="skills-icon" src={skill.skillImage} alt={skill.technology}/>
+            <div className="skill-item">
+              <h6 className="skill-title">{skill.technology}</h6>
+              <img className="skills-icon" src={skill.skillImage} alt={skill.technology}/>
+            </div>
           ))}
         </div>
       </div>
@@ -119,16 +147,25 @@ function App() {
       </div>
     </section>
 
-    <footer className="footer">
+    <footer className="footer" id="social">
+      <div>
       <div className="container social-links">
         <SocialIcon url="https://github.com/ShirleyAR0826" className="Icon"/>
-        <SocialIcon url="https://web.facebook.com/shirley.apellido" className="Icon" />
+        {/* <SocialIcon url="https://web.facebook.com/shirley.apellido" className="Icon" /> */}
         <SocialIcon url="https://stackoverflow.com/users/13151983/shirleyar" className="Icon" />
+        <SocialIcon url="https://www.linkedin.com/in/shirleyapellido" className="Icon" />
+        {/* <SocialIcon url="https://twitter.com/ShirleyAR0826" className="Icon" /> */}
       </div>
-      <hr />
       <p className="footer__text">
         © 2020 - Shirley Reyes
       </p>
+      </div>
+      <div className="back-to-top-container">
+        <a href="#top" className="back-to-top">
+          <img src="/chevron-up-icon.png" alt="up-arrow" />
+          <span>Back to top</span>
+        </a>
+      </div>
     </footer>
   </div>
   );
