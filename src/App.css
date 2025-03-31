@@ -274,18 +274,37 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 0px;
-  background-position: center;
-  background-size: cover;
   font-weight: 400;
-  color: #272341;
   padding: 0rem 5.6rem;
   margin-bottom: 0;
+  position: relative; /* Needed for the pseudo-element */
+  overflow: hidden;
+  /* z-index: -1; */
+}
+
+#hero::before {
+  content: "";
+  position: absolute;
   top: 0;
   left: 0;
-  bottom: 0;
   right: 0;
+  bottom: 0;
+  background: linear-gradient(-45deg, #000000, #222222, #444444, #000000);
+  background-size: 300% 300%;
+  animation: gradientAnimation 4s ease infinite; /* Reduced from 8s to 4s */
   z-index: -1;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animated-background {
+  background: linear-gradient(-45deg, #000000, #222222, #444444, #000000);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
 }
 
 #hero > .container {
@@ -293,7 +312,6 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 @keyframes slideInFromLeft {

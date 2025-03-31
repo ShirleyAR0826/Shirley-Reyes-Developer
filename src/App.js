@@ -15,7 +15,10 @@ function App() {
   return ( 
   <div className="app">
     <div id="top" className="top">
-      <Jumbotron id="hero" style={{backgroundImage: `url(${cover3})`}}>
+      <Jumbotron 
+        id="hero" 
+        className="animated-background"
+      >
         <Header/>
         <HeaderMobile/>
         <div className="container">
