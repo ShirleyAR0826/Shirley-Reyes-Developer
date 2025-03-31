@@ -7,7 +7,6 @@ import { SocialIcon } from 'react-social-icons';
 import Project from './Project';
 import { projectList, skillsList, strengthsList } from './list';
 import Header from './Header';
-import cover3 from './cover3.jpg';
 import HeaderMobile from './HeaderMobile';
 
 
