@@ -66,7 +66,12 @@ function App() {
               project.
               </p>
               <span className="d-flex mt-3">
-                <a target="_blank" rel="noopener noreferrer" className="cta-btn cta-btn--resume" href="https://drive.google.com/file/d/1LibA26JxPQ7pDrQxVRewesmleX2SJZE_/view?usp=drive_link">
+                <a 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="cta-btn cta-btn--resume" 
+                  href="https://drive.google.com/file/d/1IY_X--D0Prh2yjInTnvDsGGUeSgiLU2n/view?usp=sharing"
+                >
                   View Resume
                 </a>
               </span>
