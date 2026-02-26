@@ -240,13 +240,13 @@ function App() {
     <section id="skills">
       <div className="container">
         <h2 className="section-title">
-            Skills
+          Skills
         </h2>
-        <div className="skills">
-          {skillsList.map(skill=>(
-            <div className="skill-item">
+        <div className="skills-grid">
+          {skillsList.map((skill) => (
+            <div className="skill-item" key={skill.technology}>
               <h6 className="skill-title">{skill.technology}</h6>
-              <img className="skills-icon" src={skill.skillImage} alt={skill.technology}/>
+              <img className="skills-icon" src={skill.skillImage} alt={skill.technology} />
             </div>
           ))}
         </div>
@@ -259,8 +259,9 @@ function App() {
           <h2 className="section-title">
             Projects
           </h2>
-          {projectList.map(project=>(
+          {projectList.map((project) => (
             <Project
+              key={project.title}
               title={project.title}
               description={project.description}
               liveLink={project.liveLink}
@@ -268,7 +269,6 @@ function App() {
               screenShot={project.screenShot}
             />
           ))}
-          
         </div>
       </div>
     </section>
@@ -287,27 +287,25 @@ function App() {
             rel="noopener noreferrer"
             className="cta-btn cta-btn--resume"
             href="mailto:shirley.apellido@gmail.com"
-            >Inquire here</a>
+            >Send me a message</a>
         </div>
       </div>
     </section>
-
     <footer className="footer" id="social">
-      <div>
-      <div className="container social-links">
-        <SocialIcon url="https://github.com/ShirleyAR0826" className="Icon"/>
-        {/* <SocialIcon url="https://web.facebook.com/shirley.apellido" className="Icon" /> */}
-        <SocialIcon url="https://stackoverflow.com/users/13151983/shirleyar" className="Icon" />
-        <SocialIcon url="https://www.linkedin.com/in/shirleyapellido" className="Icon" />
-        {/* <SocialIcon url="https://twitter.com/ShirleyAR0826" className="Icon" /> */}
-      </div>
-      <p className="footer__text">
-        © 2020 - Shirley Reyes
-      </p>
+      <div className="footer-main">
+        <div className="container social-links">
+          <SocialIcon url="https://github.com/ShirleyAR0826" className="Icon" />
+          <SocialIcon url="https://www.upwork.com" className="Icon" />
+          {/* <SocialIcon url="https://web.facebook.com/shirley.apellido" className="Icon" /> */}
+          <SocialIcon url="https://stackoverflow.com/users/13151983/shirleyar" className="Icon" />
+          <SocialIcon url="https://www.linkedin.com/in/shirleyapellido" className="Icon" />
+          {/* <SocialIcon url="https://twitter.com/ShirleyAR0826" className="Icon" /> */}
+        </div>
+        <p className="footer__text">&copy; 2020 - Shirley Reyes</p>
       </div>
       <div className="back-to-top-container">
-        <a href="#top" className="back-to-top">
-          <img src="/chevron-up-icon.png" alt="up-arrow" />
+        <a href="#top" className="back-to-top" aria-label="Back to top">
+          <span className="back-to-top__icon" aria-hidden="true">&#8593;</span>
           <span>Back to top</span>
         </a>
       </div>
@@ -317,3 +315,4 @@ function App() {
 }
 
 export default App;
+
