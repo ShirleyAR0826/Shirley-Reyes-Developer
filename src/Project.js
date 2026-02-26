@@ -13,9 +13,11 @@ function Project({title, description, liveLink, sourceCode, screenShot}) {
             <a target="_blank" rel="noopener noreferrer" className="cta-btn cta-btn--hero cta-project" href={liveLink}>
               See Live
             </a>
-            <a target="_blank" rel="noopener noreferrer" className="cta-btn text-color-main cta-project" href={sourceCode}>
-              Source Code
-            </a>
+            {sourceCode && (
+              <a target="_blank" rel="noopener noreferrer" className="cta-btn text-color-main cta-project" href={sourceCode}>
+                Source Code
+              </a>
+            )}
           </div>
         </div>
         <div className="col-lg-8 col-sm-12">

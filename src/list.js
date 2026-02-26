@@ -1,5 +1,19 @@
 export const projectList = [
     {
+        title: "Sunchasers Travel Booking App",
+        description: "This is a Travel Booking App that I created with React. It has responsive design. Features include: user registration and login, search for hotels and flights, booking and payment integration with Paypal API.",
+        liveLink: "https://www.sunchaserstravel.com/",
+        sourceCode: null,
+        screenShot: "/sunchaserstravel.png"
+    },
+    {
+        title: "SigmaTaxes Website",
+        description: "This is a website that I created for a client. It is a tax consultancy firm. I created the website using React and MaterialUI. It has a responsive design.",
+        liveLink: "https://sigmataxes.com/",
+        sourceCode: null,
+        screenShot: "/sigmataxes.png"
+    },
+    {
         title: "Amazon Clone",
         description: "This is a Fullstack Amazon Clone which I created using React. It uses MaterialUI for the front end. I has payment integration with Stripe API. It also has a cloud server in firebase functions.",
         liveLink: "https://challenge-459f3.web.app",

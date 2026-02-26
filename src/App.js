@@ -18,18 +18,40 @@ function App() {
         id="hero" 
         className="animated-background"
       >
+        <div className="hero-orb hero-orb--one" />
+        <div className="hero-orb hero-orb--two" />
+        <div className="hero-grid" />
         <Header/>
         <HeaderMobile/>
         <div className="container">
-          <h1 className="hero-title">
-            Hi, my name is&#160;
-            <span className="text-color-main"> Shirley Reyes.</span>
-              <br />
-            I'm a Fullstack Developer.
-          </h1>
-          <p className="hero-cta">
-            <a className="cta-btn cta-btn--hero" href="#about">Know more</a>
-          </p>
+          <div className="hero-content">
+            {/* <p className="hero-eyebrow">FULL-STACK DEVELOPER</p> */}
+            <h1 className="hero-title">
+              Designing and building polished web products for real-world teams.
+            </h1>
+            <p className="hero-description">
+              I am Shirley Reyes, a full-stack developer focused on scalable
+              systems, reliable APIs, and engaging front-end experiences.
+            </p>
+            <div className="hero-cta">
+              <a className="cta-btn cta-btn--hero" href="#projects">View Projects</a>
+              <a className="cta-btn cta-btn--ghost" href="#contact">Let's Connect</a>
+            </div>
+            <div className="hero-highlights">
+              <div className="hero-highlight-card">
+                <h3>20+</h3>
+                <p>Technologies used across production projects</p>
+              </div>
+              <div className="hero-highlight-card">
+                <h3>Full Stack</h3>
+                <p>React, Node.js, REST APIs, and database architecture</p>
+              </div>
+              <div className="hero-highlight-card">
+                <h3>User First</h3>
+                <p>Interfaces designed for clarity, speed, and accessibility</p>
+              </div>
+            </div>
+          </div>
         </div>
       </Jumbotron>
     </div>  
